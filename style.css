@@ -156,12 +156,16 @@ button {
 }
 
 .announcements {
-    grid-column: 3 / 4;
     grid-row: 1 / 2;
 }
 
 .trending {
-    grid-column: 3 / 4;
-    grid-row: 1 / 2;
+    align-self: end;
+    grid-row: 2 / 3;
+}
+
+.both {
+    display: grid;
+    grid-template-rows: 60% 40%;
 }
 
