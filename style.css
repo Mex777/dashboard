@@ -9,12 +9,13 @@ body {
     width: 100vw;
     height: 100vh;
     margin: 0;
+    overflow-x: hidden;
 }
 
 .container {
     display: grid;
     width: 100%;
-    grid-template-columns: minmax(15%, 1fr) 85%;
+    grid-template-columns: minmax(18%, 1fr) 82%;
     grid-template-rows: 100%;
 }
 
@@ -34,7 +35,7 @@ body {
     grid-column: 2 / -1;
     display: grid;
     gap: 3rem;
-    grid-template-columns: 28% 28% 31%;
+    grid-template-columns: 34% 34% 20%;
     background-color: rgb(237, 235, 235);
 }
 
@@ -45,18 +46,38 @@ body {
     grid-template-rows: 30% 60%;
 }
 
-input {
+.icon {
+    display: flex;
+    height: 70%;
     width: 100%;
-    height: 80%;
+}
+
+.icon svg, .user-info svg {
+    padding: 0 1rem 0 1rem;
+}
+
+input {
+    width: 90%;
     border-radius: 8px;
     background-color: rgb(235, 236, 237);
     border: 0;
 }
 
 .user-info {
+    display: flex;
+    align-items: center;
     align-self: center;
     padding: 1rem;
     justify-self: end;
+}
+
+.ic {
+    align-items: center;
+    display: flex;
+}
+
+.ic svg {
+   align-items: end; 
 }
 
 #name {
@@ -128,10 +149,6 @@ button {
 
 .announcements p {
     border-bottom: solid 1px gray;
-}
-
-.announcements p:last-child {
-    border: 0;
 }
 
 .trending h4 {
